@@ -4,8 +4,9 @@ class Anagram
 
   def initialize(word)
     @word = word
+  end
 
-    def match(words)
+  def match(words)
     words.select do |word|
       is_anagram?(word)
     end
